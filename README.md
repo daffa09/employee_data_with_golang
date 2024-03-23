@@ -1,4 +1,4 @@
-### Contact App
+# Contact App
 
 This is a simple project i build when intern at Juni 2022
 
