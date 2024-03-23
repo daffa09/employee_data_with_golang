@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 71, 71);
+}
+
+.h1-style {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  /*<== Ketebalan Font*/
+  color: black;
+}
+
+.container {
+  width: 300px;
+  height: 510;
+  background-color: white;
+  margin: 50px 10px 50px 600px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+li label {
+  font-size: 12pt;
+}
+
+.form-style {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 11pt;
+  margin-bottom: 20px;
+}
+
+.btn-tambah {
+  background-color: royalblue;
+  cursor: pointer;
+  color: white;
+  font-size: 11pt;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-reset {
+  background-color: sandybrown;
+  color: white;
+  cursor: pointer;
+  font-size: 11pt;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-edit {
+  background-color: royalblue;
+  color: white;
+  font-size: 11pt;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-kembali {
+  background-color: teal;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 11pt;
+  padding: 7px 16px;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <style>
+        .container {
+            width: 300px;
+            height: 550px;
+            background-color: white;
+            margin: 50px 10px 50px 600px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+    <title>Tambah Contact</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="h1-style">Tambah Contact</h1>
+
+        <form action="/contact/create" method="post" enctype="multipart/form-data" id="tambah">
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="nama" id="name" class="form-style">
+            </li>
+            <li>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" class="form-style">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-style">
+            </li>
+            <li>
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" class="form-style">
+            </li>
+
+            <button class="btn-tambah" type="submit" name="submit"
+                onclick="return confirm('Anda yakin?')">Kirim</button>
+            <!-- <button class="btn-reset" onclick="reset()">Reset</button> -->
+            <a href="/" class="btn-kembali">Kembali</a>
+        </form>
+    </div>
+    <!-- <script src="/asset/js/jquery-3.6.0.min.js"></script> -->
+    <script>
+        function reset() {
+            document.getElementById("tambah").reset();
+        }
+    </script>
+</body>
+
+</html>

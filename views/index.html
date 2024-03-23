@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
+    <!-- <script src="/styles/jquery-3.6.0.min.js"></script> -->
+    <style>
+        body {
+            background-color: rgb(8, 71, 71);
+        }
+    </style>
+    <title>Contact List sederhana</title>
+</head>
+
+<body>
+
+    <div class="container rounded bg-white mt-5">
+
+        <div class="table-responsive fs-6 box-table">
+
+            <h1 class="pt-3 pb-3">Contact List</h1>
+
+            <a class="btn btn-primary mb-3" href="/tambah">Tambah</a>
+
+            <table class="table table-striped table-sm table-bordered mb-5" style="text-align: center;" border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ if . }}
+                    {{ range . }}
+                    <tr>
+                        <th>
+                            {{ .Id }}
+                        </th>
+                        <th>
+                            {{ .Name }}
+                        </th>
+                        <th>
+                            {{ .Age }}
+                        </th>
+                        <th>
+                            {{ .Email }}
+                        </th>
+                        <th>
+                            {{ .Phone }}
+                        </th>
+                        <th>
+                            <a class="btn btn-warning text-white text-decoration-none" href="#">Edit</a>
+                            <a class="btn btn-danger text-white text-decoration-none btn-hapus" href="#">Hapus</a>
+                        </th>
+                    </tr>
+                    {{ end }}
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
